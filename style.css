@@ -1,181 +1,109 @@
-/* Reset and base styles  */
-*,
-*::before,
-*::after {
-	padding: 0px;
-	margin: 0px;
-	border: none;
-	box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-
-/* Links */
-
-a, a:visited  {
-    color: inherit;
-    text-decoration: none;
-}
-
-a:hover  {
-    color: inherit;
-    text-decoration: none;
-}
-
-a:focus,
-a:active {
-	outline: none;
-}
-
-/* Common */
-
-aside, nav, footer, header, section, main {
-	display: block;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-    font-size: inherit;
-	font-weight: inherit;
-	line-height: inherit;
-}
-
-p + p {
-	margin-top: 1em;
-}
-
-ul {
-	list-style: none;
-}
-
-img, svg {
-	vertical-align: top;
-	max-width: 100%;
-	height: auto;
-}
-
-/* Form */
-
-input, textarea, button, select {
-	font-family: inherit;
-    font-size: inherit;
-}
-
-input::-ms-clear {
-	display: none;
-}
-
-button, input[type="submit"] {
-    display: inline-block;
-    box-shadow: none;
-    background-color: transparent;
-    background: none;
-    cursor: pointer;
-}
-
-input:focus, input:active,
-button:focus, button:active {
-    outline: none;
-}
-
-button::-moz-focus-inner {
-	padding: 0;
-	border: 0;
-}
-
-label {
-	cursor: pointer;
-}
-
-legend {
-	display: block;
-}
-
-nav.style-3 {
-  background-color: black;
-  text-align: right;
-  color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-nav.style-3 h1 {
-  float: left;
+body {
   margin: 0;
-  padding: 10px 15px;
 }
-nav.style-3 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
 }
-nav.style-3 ul li {
-  display: inline-block;
-}
-nav.style-3 ul li a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 20px;
-  border-bottom: 5px solid black;
-
-  padding: 10px 15px;
-}
-nav.style-3 ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.589);
-  border-bottom-color: white;
-}
-.style-3 {
-  background-color: rgb(0, 0, 0);
-  text-align: right;
-  font-size: 30px;
-}
-.style-3 ul li {
-  display: inline;
-  list-style: none;
-  color: aquamarine;
-  text-decoration: none;
-}
-.stayle-3 ul li a {
-  display: inline-block;
-  text-decoration: none;
-
-  font-family: "Times New Roman", Times, serif;
-}
-.style-3 a:hover {
-  background-color: rgb(134, 125, 125);
-  color: rgb(0, 0, 0);
-  border-radius: 0px;
-  border-bottom: 5px solid rgb(255, 255, 255);
-}
-span {
-  text-align: left;
-  color: white;
-  text-decoration: none;
-  float: left;
-  padding: 10px;
-}
-
 .container {
-  /* задать ширину и выровнять по середине */
-  max-width: 980px;
-  margin: 0 auto;
-}
-.row {
-  /* строка */
   display: flex;
-  flex-wrap: wrap;
+  margin: 20px;
 }
-[class^="col"] {
-  padding: 0 10px;
+h1 {
+  font-size: 68px;
+  color: #156963;
+  font-weight: 500;
+}
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+}
+.arrow-botton1 h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  width: 105px;
+  height: 29px;
+  color: #333333;
+}
+
+.arrow-botton2 h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  width: 105px;
+  height: 29px;
+  color: #f2f2f2;
+}
+
+h4 {
+  padding: 13px;
+  width: 105px;
+  height: 29px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+
+  color: #333333;
+}
+h5 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #156963;
+  line-height: 24px;
+}
+.card-content h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  line-height: 19.5px;
+}
+h6 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.col-4 {
+  flex-basis: 33.3%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.col-3 {
+  flex-basis: 25%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.col-6 {
+  flex-basis: 16.6%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.col-12 {
+  flex: 100% 0 0;
 }
 .col-1 {
   flex: 8.3% 0 0;
 }
 .col-2 {
   flex: 16.6% 0 0;
-}
-.col-3 {
-  flex: 25% 0 0;
-}
-.col-4 {
-  flex: 33.3% 0 0;
 }
 .col-5 {
   flex: 41.6% 0 0;
@@ -198,26 +126,294 @@ span {
 .col-11 {
   flex: 91.6% 0 0;
 }
-.col-12 {
-  flex: 100% 0 0;
+.content {
+  display: flex;
+  margin: 30px;
+  margin-top: -670px;
 }
-
-.card {
-  background-color: white;
-  box-shadow: 5px 5px 10px 0 rgb(34, 32, 32);
-  transition: all 100ms ease-in;
-
-  margin-bottom: 15px;
+.article-content p {
+  font-family: "Montserrat";
+  font-size: 10px;
 }
-.card .card-image {
-  width: 100%;
+.navbar ul {
+  display: flex;
+  list-style-type: none;
 }
-.card .card-content {
-  padding: 10px 15px;
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  margin-right: 30px;
 }
-.card.card-horizonal {
+.sign-up {
+  color: #156963;
+  font-weight: 700;
+}
+.sign-in {
+  background-color: #156963;
+  color: white;
+  font-weight: 700;
+  padding: 8px 20px;
+}
+.item {
+  display: flex;
+  margin-left: auto;
+}
+img {
+  margin-top: 11px;
+  height: 35px;
+  width: 35px;
+}
+.item img {
+  margin-top: 18px;
+  height: 20px;
+  width: 20px;
+}
+.search {
+  margin-right: 30px;
+}
+header img {
+  margin-top: -1px;
+  height: 700px;
+  width: 1000px;
+}
+header {
   display: flex;
 }
-.card.card-horizonal .card-image {
-  width: 30%;
+.header-text h1 {
+  margin-top: 90px;
+}
+.header-text {
+  margin: 90px;
+}
+header p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  line-height: 32px;
+  margin-top: -10px;
+}
+header .col-6 {
+  width: 213px;
+  height: 83px;
+}
+header .col-6 img {
+  width: 32px;
+  height: 32px;
+}
+header .col-6 .arrow-botton1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header .col-6 .arrow-botton2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+main {
+  margin: 40px;
+  margin-top: 700px;
+}
+#product-1 {
+  display: flex;
+  margin-left: -20px;
+}
+#product-1 article {
+  flex: 0 0 23%;
+  display: flex;
+  border: 1px solid #e0e0e0;
+  margin: 15px;
+}
+.product-card {
+  margin: 15px;
+}
+.product-image img {
+  margin-right: 15px;
+  width: 48px;
+  height: 48px;
+  margin-top: 6px;
+}
+.product-image h5 {
+  margin-top: 10px;
+}
+.product-image {
+  display: flex;
+  width: 150px;
+  height: 50px;
+}
+.product-text {
+  font-size: 10px;
+  font-weight: 400;
+  font-family: "Montserrat";
+  line-height: 16px;
+  margin-top: 20px;
+}
+.product-image1 {
+  display: flex;
+  width: 200;
+  height: 50px;
+}
+.product-image1 img {
+  margin-right: 15px;
+  width: 48px;
+  height: 48px;
+  margin-top: 6px;
+}
+.product-image1 h5 {
+  margin-top: 10px;
+}
+
+.section-text2 {
+  margin-top: 40px;
+  margin-left: auto;
+  display: flex;
+  border: 1px solid #e0e0e0;
+  width: 120px;
+  height: 31px;
+}
+.section-text2 p {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  color: black;
+  margin-top: 5px;
+  margin-left: 7px;
+}
+.section-text2 img {
+  width: 6px;
+  height: 3px;
+
+  margin: 8px;
+}
+.line {
+  border: 1px solid #e0e0e0;
+  margin-top: -50px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.row {
+  display: flex;
+}
+
+.row img {
+  background-color: #ccc;
+  width: 227px;
+  height: 230px;
+  margin-left: -20px;
+  margin-top: -10px;
+}
+.card {
+  margin: 20px;
+}
+.card-content {
+  text-align: center;
+}
+.card-content p {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+}
+.card-content h5 {
+  margin: -7px;
+}
+.section-card2 img {
+  width: 513px;
+  height: 680px;
+}
+.caart {
+  margin-top: 35px;
+  display: flex;
+}
+
+.section-card1 img {
+  width: 600px;
+  height: 280px;
+  margin-top: 42px;
+}
+.section-card1 p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  line-height: 32px;
+}
+.section-card1-text {
+  margin: 30px;
+  margin-right: 70px;
+}
+.section-card1-text h2 {
+  margin-top: 40px;
+}
+.section-card1-text p {
+  color: rgb(104, 98, 98);
+}
+.section-text {
+  margin: 55px;
+  margin-left: 90px;
+}
+.botton p {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  font-family: "Nunito";
+  font-style: normal;
+  background-color: #156963;
+  color: white;
+  padding: 10px;
+}
+.botton {
+  width: 152px;
+  height: 40px;
+  margin-top: 30px;
+  border: 40px;
+}
+.section-cartockka {
+  display: flex;
+  background: #f3f4f6;
+  margin-top: 60px;
+}
+.section-imag {
+  margin-right: 30px;
+}
+.section-imag img {
+  width: 400px;
+  height: 330px;
+}
+.line2 {
+  opacity: 0.3;
+  border: 1px solid #156963;
+  margin-top: 80px;
+  margin-left: -40px;
+  margin-right: -40px;
+}
+.row1 {
+  display: flex;
+  margin: 130px;
+  margin-top: 40px;
+}
+
+.col-3 h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  color: #156963;
+}
+.col-3 h5 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: black;
+}
+.footer-img1 {
+  width: 234px;
+  height: 32px;
+}
+.footer-img2 {
+  width: 51px;
+  height: 22px;
 }
